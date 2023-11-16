@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.divider {
+  height: 1px;
+  width: 90%;
+  margin: 25px auto;
+  background-color: rgb(140, 140, 140);
+}
