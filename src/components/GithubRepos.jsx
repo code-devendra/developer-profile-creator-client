@@ -11,11 +11,11 @@ const GithubRepos = ({ repos }) => {
             className="pl-[3%] pr-[2%] md:pr-[5%] md:pl-[6%] my-6"
             key={i}
           >
-            <div className="flex items-center gap-4 text-lg mb-2">
+            <div className="flex items-center gap-4 text-sm md:text-lg mb-2">
               <a
                 href={repo.html_url}
                 target="_blank"
-                className="text-blue font-semibold flex items-center text-xl"
+                className="text-blue font-semibold flex items-center text-sm md:text-xl hover:text-light-dark"
               >
                 {repo.name} <GoArrowUpRight />
               </a>

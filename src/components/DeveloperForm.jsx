@@ -56,7 +56,7 @@ const DeveloperForm = () => {
           <div className="my-5">
             <label
               htmlFor="github"
-              className="flex items-center font-semibold gap-x-2 mb-2"
+              className="flex items-center font-medium gap-x-2 mb-2"
             >
               <FaGithub className="text-lg" /> Github*
             </label>
@@ -67,13 +67,13 @@ const DeveloperForm = () => {
               value={data.github_id}
               onChange={handleChange}
               placeholder="Enter Github username or id. Eg- code-devendra"
-              className="pl-3 py-[5px] rounded-md w-[80%] outline-none border border-gray-300"
+              className="pl-3 py-[5px] rounded-md w-[90%] md:w-[80%] outline-none border border-gray-300"
             />
           </div>
           <div className="my-5">
             <label
               htmlFor="linkedin"
-              className="flex items-center font-semibold gap-x-2 mb-2"
+              className="flex items-center font-medium gap-x-2 mb-2"
             >
               <FaLinkedin className=" text-blue text-lg" /> Linkedin
             </label>
@@ -84,13 +84,13 @@ const DeveloperForm = () => {
               value={data.linkedin_id}
               onChange={handleChange}
               placeholder="Enter Linkedin username or id. Eg- code-devendra"
-              className="pl-3 py-[5px] rounded-md w-[80%] outline-none border border-gray-300"
+              className="pl-3 py-[5px] rounded-md w-[90%] md:w-[80%] outline-none border border-gray-300"
             />
           </div>
           <div className="my-5">
             <label
               htmlFor="leetcode"
-              className="flex items-center font-semibold gap-x-2 mb-2"
+              className="flex items-center font-medium gap-x-2 mb-2"
             >
               <SiLeetcode className=" text-lg" /> Leetcode
             </label>
@@ -101,13 +101,13 @@ const DeveloperForm = () => {
               value={data.leetcode_id}
               onChange={handleChange}
               placeholder="Enter Leetcode username or id. Eg- code-devendra"
-              className="pl-3 py-[5px] rounded-md w-[80%] outline-none border border-gray-300"
+              className="pl-3 py-[5px] rounded-md w-[90%] md:w-[80%] outline-none border border-gray-300"
             />
           </div>
           <div className="my-5">
             <label
               htmlFor="codechef"
-              className="flex items-center font-semibold gap-x-2 mb-2"
+              className="flex items-center font-medium gap-x-2 mb-2"
             >
               <SiCodechef className="  text-lg" /> Codechef
             </label>
@@ -118,13 +118,13 @@ const DeveloperForm = () => {
               value={data.codechef_id}
               onChange={handleChange}
               placeholder="Enter Codechef username or id. Eg- code-devendra"
-              className="pl-3 py-[5px] rounded-md w-[80%] outline-none border border-gray-300"
+              className="pl-3 py-[5px] rounded-md w-[90%] md:w-[80%] outline-none border border-gray-300"
             />
           </div>
           <div className="my-5">
             <label
               htmlFor="codeforces"
-              className="flex items-center font-semibold gap-x-2 mb-2"
+              className="flex items-center font-medium gap-x-2 mb-2"
             >
               <SiCodeforces className="text-red-500 text-lg" /> Codeforces
             </label>
@@ -135,13 +135,13 @@ const DeveloperForm = () => {
               value={data.codeforces_id}
               onChange={handleChange}
               placeholder="Enter Codeforces username or id. Eg- code-devendra"
-              className="pl-3 py-[5px] rounded-md w-[80%] outline-none border border-gray-300"
+              className="pl-3 py-[5px] rounded-md w-[90%] md:w-[80%] outline-none border border-gray-300"
             />
           </div>
           <div className="my-5">
             <label
               htmlFor="hackerrank"
-              className="flex items-center font-semibold gap-x-2 mb-2"
+              className="flex items-center font-medium gap-x-2 mb-2"
             >
               <FaHackerrank className=" text-green-600 text-lg" /> Hackerrank
             </label>
@@ -152,13 +152,13 @@ const DeveloperForm = () => {
               value={data.hackerrank_id}
               onChange={handleChange}
               placeholder="Enter Hackerrank username or id. Eg- code-devendra"
-              className="pl-3 py-[5px] rounded-md w-[80%] outline-none border border-gray-300"
+              className="pl-3 py-[5px] rounded-md w-[90%] md:w-[80%] outline-none border border-gray-300"
             />
           </div>
           <div className="my-5">
             <label
               htmlFor="medium"
-              className="flex items-center font-semibold gap-x-2 mb-2"
+              className="flex items-center font-medium gap-x-2 mb-2"
             >
               <FaMedium className=" text-lg" /> Medium
             </label>
@@ -169,13 +169,13 @@ const DeveloperForm = () => {
               value={data.medium_id}
               onChange={handleChange}
               placeholder="Enter Medium username or id. Eg- code-devendra"
-              className="pl-3 py-[5px] rounded-md w-[80%] outline-none border border-gray-300"
+              className="pl-3 py-[5px] rounded-md w-[90%] md:w-[80%] outline-none border border-gray-300"
             />
           </div>
           <div className="my-5">
             <label
               htmlFor="twitter"
-              className="flex items-center font-semibold gap-x-2 mb-2"
+              className="flex items-center font-medium gap-x-2 mb-2"
             >
               <FaTwitter className="text-blue text-lg" /> Twitter
             </label>
@@ -186,15 +186,15 @@ const DeveloperForm = () => {
               value={data.twitter_id}
               onChange={handleChange}
               placeholder="Enter Twitter username or id. Eg- code-devendra"
-              className="pl-3 py-[5px] rounded-md w-[80%] outline-none border border-gray-300"
+              className="pl-3 py-[5px] rounded-md w-[90%] md:w-[80%] outline-none border border-gray-300"
             />
           </div>
         </form>
         {error && (
-          <div className="alert alert-error mt-5 rounded-sm">
+          <div className="alert alert-error mt-5 text-sm rounded-md flex items-center text-white font-medium bg-red-600 bg-opacity-80">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="stroke-current shrink-0 h-6 w-6"
+              className="stroke-current shrink-0 h-4 w-4"
               fill="none"
               viewBox="0 0 24 24"
             >

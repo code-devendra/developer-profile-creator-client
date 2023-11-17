@@ -25,7 +25,6 @@ const Profile = () => {
     setIsLoading(true);
     try {
       const result = await getDeveloper(id);
-      console.log(result.data);
       setData(result.data.developerInfo);
     } catch (error) {
       navigate("/error/page");
@@ -159,7 +158,13 @@ const Profile = () => {
             Github repositories
           </h1>
           <div className="divider"></div>
-          {data && <GithubRepos repos={data.repos} />}
+          {data.repos && data.repos.length > 0 ? (
+            <GithubRepos repos={data.repos} />
+          ) : (
+            <h4 className="text-lg text-black my-4 text-center">
+              No Repo till now!
+            </h4>
+          )}
         </>
       )}
     </main>

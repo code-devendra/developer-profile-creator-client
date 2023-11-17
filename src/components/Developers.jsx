@@ -14,7 +14,6 @@ const Developers = ({ updateDeveloperCount, search }) => {
     setError(null);
     try {
       const result = await getAllDevelopers(searchTerm);
-      // console.log(result);
       const data = result.data.developers;
       setTotalDevelopers(result.data.developers_count);
       updateDeveloperCount(result.data.developers_count);
