@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 import { getAllDevelopers } from "../requests";
 import { IoReloadOutline } from "react-icons/io5";
 import { GoArrowUpRight } from "react-icons/go";
+import { LuLoader2 } from "react-icons/lu";
+
 import { Link } from "react-router-dom";
 
 const Developers = ({ updateDeveloperCount, search }) => {
@@ -59,9 +61,9 @@ const Developers = ({ updateDeveloperCount, search }) => {
         ))}
       </div>
       {isLoading && (
-        <p className="my-5 text-center font-bold text-sm text-light uppercase">
-          Loading...
-        </p>
+        <div className="text-blue text-3xl text-center w-full py-5 flex justify-center">
+          <LuLoader2 className=" animate-spin" />
+        </div>
       )}
       <div className="divider"></div>
       {totalDevelopers === 0 ? (
